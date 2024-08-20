@@ -15,3 +15,17 @@ function openLink(evt, linkName) {
 
 // Click on the first tablink on load
 document.getElementsByClassName("tablink")[0].click();
+
+
+
+// 25. 請在 js / myScript.js 加入以下 JavaScript
+var modalElem = document.getElementById("tyModal");
+var spanElem = document.getElementsByClassName("tyClose")[0];
+
+spanElem.onclick = function () {
+    modalElem.style.display = "none";
+}
+
+setTimeout(function () {
+    modalElem.style.display = "block";
+}, 1000);
